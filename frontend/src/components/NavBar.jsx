@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/ACMLogo.png";
 import { Link, NavLink } from "react-router-dom";
 
+
 function NavBar() {
   return (
     <nav className="w-full bg-white shadow-sm sticky top-0 z-50">
@@ -38,9 +39,11 @@ function NavBar() {
 
           {/* Right: Button */}
           <div>
-            <button className="bg-blue-800 text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-blue-900 hover:cursor-pointer transition">
-              Join Us
-            </button>
+           <Link to="/joinus">
+  <button className="bg-blue-800 text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-blue-900 hover:cursor-pointer transition">
+    Join Us
+  </button>
+</Link>
           </div>
 
         </div>
